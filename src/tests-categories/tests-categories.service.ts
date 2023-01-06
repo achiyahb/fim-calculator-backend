@@ -4,23 +4,23 @@ import { UpdateTestsCategoryDto } from './dto/update-tests-category.dto';
 
 @Injectable()
 export class TestsCategoriesService {
-  create(createTestsCategoryDto: CreateTestsCategoryDto) {
-    return 'This action adds a new testsCategory';
-  }
+	create(createTestsCategoryDto: CreateTestsCategoryDto) {
+		return 'This action adds a new testsCategory';
+	}
 
-  findAll() {
-    return `This action returns all testsCategories`;
-  }
+	findAll() {
+		return `This action returns all testsCategories`;
+	}
 
-  findOne(id: number) {
-    return `This action returns a #${id} testsCategory`;
-  }
+	findOne(id: number) {
+		return `This action returns a #${id} testsCategory`;
+	}
 
-  update(id: number, updateTestsCategoryDto: UpdateTestsCategoryDto) {
-    return `This action updates a #${id} testsCategory`;
-  }
+	update(id: number, updateTestsCategoryDto: UpdateTestsCategoryDto) {
+		return `This action updates a #${id} testsCategory`;
+	}
 
-  remove(id: number) {
-    return `This action removes a #${id} testsCategory`;
-  }
+	remove(id: number) {
+		return `This action removes a #${id} testsCategory`;
+	}
 }

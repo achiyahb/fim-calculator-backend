@@ -4,23 +4,23 @@ import { UpdateCategoriesQuestionDto } from './dto/update-categories-question.dt
 
 @Injectable()
 export class CategoriesQuestionsService {
-  create(createCategoriesQuestionDto: CreateCategoriesQuestionDto) {
-    return 'This action adds a new categoriesQuestion';
-  }
+	create(createCategoriesQuestionDto: CreateCategoriesQuestionDto) {
+		return 'This action adds a new categoriesQuestion';
+	}
 
-  findAll() {
-    return `This action returns all categoriesQuestions`;
-  }
+	findAll() {
+		return `This action returns all categoriesQuestions`;
+	}
 
-  findOne(id: number) {
-    return `This action returns a #${id} categoriesQuestion`;
-  }
+	findOne(id: number) {
+		return `This action returns a #${id} categoriesQuestion`;
+	}
 
-  update(id: number, updateCategoriesQuestionDto: UpdateCategoriesQuestionDto) {
-    return `This action updates a #${id} categoriesQuestion`;
-  }
+	update(id: number, updateCategoriesQuestionDto: UpdateCategoriesQuestionDto) {
+		return `This action updates a #${id} categoriesQuestion`;
+	}
 
-  remove(id: number) {
-    return `This action removes a #${id} categoriesQuestion`;
-  }
+	remove(id: number) {
+		return `This action removes a #${id} categoriesQuestion`;
+	}
 }

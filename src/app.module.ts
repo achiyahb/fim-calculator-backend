@@ -10,8 +10,8 @@ import { CategoriesAnswersModule } from './categories-answers/categories-answers
 import { CategoriesQuestionsModule } from './categories-questions/categories-questions.module';
 
 @Module({
-  imports: [TestsModule, CategoriesModule, QuestionsModule, AnswersModule, TestsCategoriesModule, CategoriesAnswersModule, CategoriesQuestionsModule],
-  controllers: [AppController],
-  providers: [AppService],
+	imports: [TestsModule, CategoriesModule, QuestionsModule, AnswersModule, TestsCategoriesModule, CategoriesAnswersModule, CategoriesQuestionsModule],
+	controllers: [AppController],
+	providers: [AppService],
 })
 export class AppModule {}

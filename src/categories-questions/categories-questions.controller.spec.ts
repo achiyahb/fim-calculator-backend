@@ -3,18 +3,18 @@ import { CategoriesQuestionsController } from './categories-questions.controller
 import { CategoriesQuestionsService } from './categories-questions.service';
 
 describe('CategoriesQuestionsController', () => {
-  let controller: CategoriesQuestionsController;
+	let controller: CategoriesQuestionsController;
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      controllers: [CategoriesQuestionsController],
-      providers: [CategoriesQuestionsService],
-    }).compile();
+	beforeEach(async () => {
+		const module: TestingModule = await Test.createTestingModule({
+			controllers: [CategoriesQuestionsController],
+			providers: [CategoriesQuestionsService],
+		}).compile();
 
-    controller = module.get<CategoriesQuestionsController>(CategoriesQuestionsController);
-  });
+		controller = module.get<CategoriesQuestionsController>(CategoriesQuestionsController);
+	});
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
+	it('should be defined', () => {
+		expect(controller).toBeDefined();
+	});
 });

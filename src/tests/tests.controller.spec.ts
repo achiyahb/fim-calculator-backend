@@ -3,18 +3,18 @@ import { TestsController } from './tests.controller';
 import { TestsService } from './tests.service';
 
 describe('TestsController', () => {
-  let controller: TestsController;
+	let controller: TestsController;
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      controllers: [TestsController],
-      providers: [TestsService],
-    }).compile();
+	beforeEach(async () => {
+		const module: TestingModule = await Test.createTestingModule({
+			controllers: [TestsController],
+			providers: [TestsService],
+		}).compile();
 
-    controller = module.get<TestsController>(TestsController);
-  });
+		controller = module.get<TestsController>(TestsController);
+	});
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
+	it('should be defined', () => {
+		expect(controller).toBeDefined();
+	});
 });

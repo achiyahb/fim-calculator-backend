@@ -3,7 +3,7 @@ import { CategoriesAnswersService } from './categories-answers.service';
 import { CategoriesAnswersController } from './categories-answers.controller';
 
 @Module({
-  controllers: [CategoriesAnswersController],
-  providers: [CategoriesAnswersService]
+	controllers: [CategoriesAnswersController],
+	providers: [CategoriesAnswersService],
 })
 export class CategoriesAnswersModule {}
