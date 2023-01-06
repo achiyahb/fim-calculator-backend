@@ -1,11 +1,18 @@
 import { Injectable } from '@nestjs/common';
-import { CreateTestsCategoryDto } from './dto/create-tests-category.dto';
 import { UpdateTestsCategoryDto } from './dto/update-tests-category.dto';
+import { InjectRepository } from '@nestjs/typeorm';
+import { TestsEntity } from '../tests/tests.entity';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class TestsCategoriesService {
-	create(createTestsCategoryDto: CreateTestsCategoryDto) {
-		return 'This action adds a new testsCategory';
+	constructor(
+		@InjectRepository(TestsEntity)
+		private readonly testsRepository: Repository<TestsEntity>
+	) {}
+
+	create(createTestsCategoryDto: TestsEntity) {
+		return this.testsRepository.create(createTestsCategoryDto);
 	}
 
 	findAll() {
