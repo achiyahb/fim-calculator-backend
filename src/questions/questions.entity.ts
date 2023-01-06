@@ -8,10 +8,10 @@ export class QuestionsEntity {
 	@Column({ type: 'varchar', length: 256, nullable: false })
 	text: string;
 
-	@CreateDateColumn()
+	@CreateDateColumn({ name: 'created_at' })
 	createdAt: Date;
 
-	@UpdateDateColumn()
+	@UpdateDateColumn({ name: 'updated_at' })
 	updatedAt: Date;
 
 	@Column({ type: 'int', width: 10, nullable: false })
