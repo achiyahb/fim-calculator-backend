@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  mysqldb:
+    image: mysql:8
+    container_name: mysql-fim
+    cap_add:
+      - SYS_NICE
+    restart: always
+    ports:
+      - "3310:3306"
+    env_file:
+      - .env
+    networks:
+      - fim_calculator
+    command: --init-file /data/application/fim-init.sql
+    volumes:
+      - db:/var/lib/fim-mysql
+      - ./init.sql:/data/application/fim-init.sql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+
+networks:
+  fim_calculator:
+    name: fim_calculator
+    driver: bridge
+
+volumes:
+  db:
+    driver: local
